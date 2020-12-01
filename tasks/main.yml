@@ -24,11 +24,7 @@
     install_args: "OPT_NO_RUNTIME=1 OPT_NO_SHAREDFX=1 OPT_NO_X86=1 OPT_NO_SHARED_CONFIG_CHECK=1"
     state: present
   notify: restart IIS
-  
+
 - name: Pause for info
   wait_for:
     timeout: 10
-  
-  handlers:
-    - name: restart IIS
-      win_shell: '& {iisreset}'
