@@ -8,7 +8,7 @@
 
 - name: Copy index.html to wwwroot
   win_copy:
-    src: ../SourceFiles/win_index.html
+    src: win_index.html
     dest: C:\inetpub\wwwroot\index.html
     force: yes
 
